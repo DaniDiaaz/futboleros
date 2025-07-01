@@ -192,7 +192,7 @@
     #panel-partidos {
       position: fixed;
       top: 80px;
-      right: 0;
+      right: 10px;
       width: 300px;
       max-height: 200px;
       background-color: white;
@@ -231,6 +231,53 @@
     }
     #panel-partidos .tabla-partidos tr:hover {
       background-color: #ffe6e6;
+    }
+    .noticias-recientes {
+      position: fixed;
+      top: 350px;
+      right: 10px;
+      width: 250px;
+      background-color: white;
+      color: #333;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      font-size: 14px;
+      z-index: 999;
+      text-align: justify;
+    }
+    .noticias-recientes h3 {
+      color: darkred;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+    .noticias-recientes ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .noticias-recientes li {
+      margin-bottom: 8px;
+    }
+    .tabla-equipos {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      color: #333;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+    .tabla-equipos th,
+    .tabla-equipos td {
+      padding: 12px 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    .escudo {
+      width: 40px;
+      height: auto;
     }
     footer {
       background-color: #222;
@@ -289,7 +336,7 @@
 </section>
 
 <section class="seccion" id="noticias">
-  <h2>Últimas noticias</h2>
+  <h2>Noticias</h2>
 <section id="jugadores">
 <div class="galeria-jugadores">
 
@@ -329,6 +376,159 @@
 
 <section class="seccion" id="equipos">
   <h2>Equipos</h2>
+  <table class="tabla-equipos">
+    <thead>
+      <tr>
+        <th>Escudo</th>
+        <th>Equipo</th>
+        <th>Entrenador</th>
+        <th>Fundación</th>
+        <th>Estadio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><img src="alaves.jpg" alt="Alavés" class="escudo"></td>
+        <td>Alavés</td>
+        <td>Eduardo Coudet</td>
+        <td>1921</td>
+        <td>Mendizorroza</td>
+      </tr>
+      <tr>
+        <td><img src="bilbao.jpg" alt="Athletic Club de Bilbao" class="escudo"></td>
+        <td>Athletic Bilbao</td>
+        <td>Ernesto Valverde</td>
+        <td>1898</td>
+        <td>San Mamés</td>
+      </tr>
+      <tr>
+        <td><img src="atm.jpg" alt="Atlético de Madrid" class="escudo"></td>
+        <td>Atlético de Madrid</td>
+        <td>Cholo Simeone</td>
+        <td>1903</td>
+        <td>Riyhad Air Metropolitano</td>
+      </tr>
+      <tr>
+        <td><img src="barsa.jpg" alt="F.C Barcelona" class="escudo"></td>
+        <td>F.C Barcelona</td>
+        <td>Hansi Flick</td>
+        <td>1899</td>
+        <td>Spotify Camp Nou</td>
+      </tr>
+      <tr>
+        <td><img src="celta.jpg" alt="Celta de Vigo" class="escudo"></td>
+        <td>Celta de Vigo</td>
+        <td>Claudio Giráldez</td>
+        <td>1923</td>
+        <td>Balaídos</td>
+      </tr>
+      <tr>
+        <td><img src="elche.jpg" alt="Elche Club de Fútbol" class="escudo"></td>
+        <td>Elche</td>
+        <td>Éder Sarabia</td>
+        <td>1922</td>
+        <td>Martínez Valero</td>
+      </tr>
+      <tr>
+        <td><img src="espanyol.jpg" alt="R.C.D Espanyol" class="escudo"></td>
+        <td>R.C.D Espanyol</td>
+        <td>Manolo González</td>
+        <td>1909</td>
+        <td>RCDE Stadium</td>
+      </tr>
+      <tr>
+        <td><img src="getafe.jpg" alt="Getafe" class="escudo"></td>
+        <td>Getafe</td>
+        <td>José Bordalás</td>
+        <td>1923</td>
+        <td>El Coliseum</td>
+      </tr>
+      <tr>
+        <td><img src="gerona.jpg" alt="Gerona" class="escudo"></td>
+        <td>Gerona</td>
+        <td>Míchel Sánchez</td>
+        <td>1930</td>
+        <td>Montilivi</td>
+      </tr>
+      <tr>
+        <td><img src="levante.jpg" alt="Levante" class="escudo"></td>
+        <td>Levante</td>
+        <td>Julián Calero</td>
+        <td>1909</td>
+        <td>Ciudad de Valencia</td>
+      </tr>
+      <tr>
+        <td><img src="mallorca.jpg" alt="Mallorca" class="escudo"></td>
+        <td>Mallorca</td>
+        <td>Jagoba Arrasate</td>
+        <td>1916</td>
+        <td>Son Moix</td>
+      </tr>
+      <tr>
+        <td><img src="osasuna.jpg" alt="Osasuna" class="escudo"></td>
+        <td>Osasuna</td>
+        <td>Alessio Lisci</td>
+        <td>1919</td>
+        <td>El Sadar</td>
+      </tr>
+      <tr>
+        <td><img src="rayo.jpg" alt="Rayo Vallecano" class="escudo"></td>
+        <td>Rayo Vallecano</td>
+        <td>Íñigo Pérez</td>
+        <td>1924</td>
+        <td>Municipal de Vallecas</td>
+      </tr>
+      <tr>
+        <td><img src="betis.jpg" alt="Real Betis Balompié" class="escudo"></td>
+        <td>Real Betis Balompié</td>
+        <td>Manuel Pellegrini</td>
+        <td>1907</td>
+        <td>Benito Villamarín</td>
+      </tr>
+      <tr>
+        <td><img src="realmadrid.jpg" alt="Real Madrid C.F" class="escudo"></td>
+        <td>Real Madrid C.F</td>
+        <td>Xabi Alonso</td>
+        <td>1902</td>
+        <td>Santiago Bernabéu</td>
+      </tr>
+      <tr>
+        <td><img src="oviedo.jpg" alt="Real Oviedo" class="escudo"></td>
+        <td>Real Oviedo</td>
+        <td>Veljko Paunović</td>
+        <td>1926</td>
+        <td>Carlos Tartiere</td>
+      </tr>
+      <tr>
+        <td><img src="realsociedad.jpg" alt="Real Sociedad" class="escudo"></td>
+        <td>Real Sociedad</td>
+        <td>Sergio Francisco</td>
+        <td>1904</td>
+        <td>Reale Arena</td>
+      </tr>
+      <tr>
+        <td><img src="sevilla.jpg" alt="Sevilla" class="escudo"></td>
+        <td>Sevilla F.C</td>
+        <td>Matías Almeyda</td>
+        <td>1890</td>
+        <td>Ramón-Sánchez Pizjuán</td>
+      </tr>
+      <tr>
+        <td><img src="valencia.jpg" alt="Valencia" class="escudo"></td>
+        <td>Valencia</td>
+        <td>Carlos Corberán</td>
+        <td>1919</td>
+        <td>Mestalla</td>
+      </tr>
+      <tr>
+        <td><img src="villarreal.jpg" alt="Villarreal" class="escudo"></td>
+        <td>Villarreal</td>
+        <td>Marcelino García Toral</td>
+        <td>1942</td>
+        <td>La Cerámica</td>
+      </tr>
+    </tbody>
+  </table>
   <p>Ejemplo</p>
 </section>
 
@@ -336,6 +536,10 @@
   <h2>Contacto</h2>
   <p>Puedes seguirnos en nuestras redes sociales</p>
 </section>
+<div class="noticias-recientes">
+  <h3>Noticias Recientes</h3>
+  <ul id="lista-noticias"></ul>
+</div>
 </main>
 
 <div id="panel-partidos">
@@ -353,6 +557,7 @@
     </tbody>
   </table>
 </div>
+
 <script>
   const partidos = [
     {fecha: "2025-07-05", hora:"21:00", equipo1: "Real Madrid", equipo2:"Barcelona"},
@@ -379,6 +584,28 @@
   tbody.appendChild(fila);
   });
 </script>
+
+<script>
+  const noticias = [
+    "01/07/2025 - Bellingham nominado al Balón de Oro.",
+    "30/06/2025 - Xavi renueva con el Barça hasta 2026.",
+    "29/06/2025 - Cristiano bate récord de goles en Arabia.",
+    "28/06/2025 - LaLiga comienza el 15 de agosto.",
+    "27/06/2025 - Vinicius MVP de Champions.",
+    "26/06/2025 - Modric anuncia su retirada tras la Euro.",
+    "25/06/2025 - El Real Madrid ficha a Endrick.",
+    "24/06/2025 - Mbappé llega al Bernabéu este lunes.",
+    "23/06/2025 - Luis Enrique da la lista de España.",
+    "22/06/2025 - Messi marca un hat-trick en la MLS."
+  ];
+  const ul = document.getElementById("lista-noticias");
+  noticias.slice(0, 5).forEach(noticia => {
+    const li = document.createElement("li");
+    li.textContent = noticia;
+    ul.appendChild(li);
+  })
+</script>
+
 </body>
 <footer>
   <div class="footer-contenido">
