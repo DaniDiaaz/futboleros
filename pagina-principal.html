@@ -13,8 +13,7 @@
       font-family: 'Montserrat', sans-serif;
       color: white;
       margin: 0;
-      padding: 0;
-      padding-top: 90px;
+      padding-top: 70px;
     }
 
     h1, h2, h3 {
@@ -26,22 +25,21 @@
       font-weight: 400;
     }
     .navbar {
+      position: fixed;
+      top: 0;
+      width: 98%;
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(8px);
       display: flex;
       justify-content: space-between;
       align-items: center;
       padding: 10px 20px;
-      background: rgba(0, 0, 0, 0.6);
-      backdrop-filter: blur(10px);
-      color: white;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
       z-index: 1000;
     }
     .navbar h1 {
-      font-size: 22px;
+      font-size: 20px;
       margin: 0;
+      color: white;
     }
     .logo-container {
       display: flex;
@@ -49,8 +47,8 @@
       gap: 10px;
     }
     .logo {
-      width: 36px;
-      height: 36px;
+      width: 32px;
+      height: 32px;
     }
     .nav-links {
       list-style: none;
@@ -174,7 +172,7 @@
     }
     #panel-partidos {
       position: fixed;
-      top: 80px;
+      top: 90px;
       right: 10px;
       width: 300px;
       max-height: 200px;
@@ -295,7 +293,7 @@
 
 <header class="navbar">
   <div class="logo-container">
-    <img src="https://cdn-icons-png.flaticon.com/512/833/833314.png" alt="Logo">
+    <img src="logo.png" alt="Logo" class="logo">
     <h1>Futboleros</h1>
   </div>
   <nav>
